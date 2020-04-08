@@ -1,0 +1,5 @@
+
+*.iml
+*.xml
+assets/.DS_Store
+.DS_Store
