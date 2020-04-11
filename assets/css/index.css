@@ -1,0 +1,211 @@
+#content {
+    display: table;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#vertical_center {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px 5px;
+    max-width: 980px; 
+}
+
+.box2 {
+    position: relative; /* Sit on top of the page content */
+    display: show; /* Hidden by default */
+    height: 1000px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+}
+
+.box1 {
+    display: block;
+}
+
+.animation_1 {
+    position: fixed;
+    top: -27%;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+#subtitle {
+    font-size: 2vw;
+    text-align: center;
+    color: #f1f1f1;
+    padding: 20px;
+    margin-top: 3vw;
+}
+
+#title {
+    opacity: 0;
+    color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    font-size: 8vw;
+    color: white;
+    font-weight: bold;
+}
+
+
+#donate {
+    background-color: transparent;
+    font-size: 2vw;
+    font-weight: bold;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 3px;
+}
+
+#gofundme {
+    color: white;
+}
+
+#donate:hover {
+    background-color: white;
+    opacity: .9;
+    color: gray;
+}
+
+#donate:hover #gofundme{
+    color: gray;
+}
+
+
+
+.fight {
+    opacity: 0;
+    font-size: 1.8vw;
+    text-align: justify;
+    color: #f1f1f1;
+    padding: 20px;
+    margin: auto;
+    line-height: 1.5em;
+}
+
+
+.contact {
+    width: inherit;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social_media {
+    width: inherit;
+    display: inline-block;
+}
+
+.icons {
+    width: 20px;
+    margin: 0 10px;
+}
+
+
+/*********** Animations ****************/
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+#title {
+    opacity: 0;
+    -webkit-animation: fadeIn 1s ease 3s;
+    -moz-animation: fadeIn 1s ease 3s;
+    -o-animation: fadeIn 1s ease 3s;
+    -ms-animation: fadeIn 1s ease 3s;
+    animation: fadeIn 1s ease-in-out 3s forwards;
+}
+
+#donate {
+    opacity: 0;
+    -webkit-animation: fadeIn 1s ease 4s;
+    -moz-animation: fadeIn 1s ease 4s;
+    -o-animation: fadeIn 1s ease 4s;
+    -ms-animation: fadeIn 1s ease 4s;
+    animation: fadeIn 1s ease-in-out 4s forwards;
+}
+
+
+.fight {
+    opacity: 0;
+    animation: fadeIn ease 5s forwards;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+    animation: fadeIn 1s ease-in-out 5s forwards;
+}
+
+.contact {
+    opacity: 0;
+    animation: fadeIn ease 6s forwards;
+    -webkit-animation: fadeIn ease 6s;
+    -moz-animation: fadeIn ease 6s;
+    -o-animation: fadeIn ease 6s;
+    -ms-animation: fadeIn ease 6s;
+    animation: fadeIn 1s ease-in-out 6s forwards;
+}
+
+
+
+/*********** Responsive Stuff ****************/
+
+
+@media screen and (max-width: 601px) {
+
+    #title {
+        font-size: 10vw;
+    }
+
+    #subtitle {
+        font-size: 4vw;
+    }
+
+    #gofundme {
+        font-size: 4vw;
+    }
+
+    .fight {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .fight {
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #title {
+        font-size: 70px;
+    }
+
+    #subtitle {
+        font-size: 25px;
+    }
+
+    #gofundme {
+        font-size: 20px;
+    }
+
+    .fight {
+        font-size: 20px;
+    }
+}
