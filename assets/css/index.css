@@ -9,7 +9,7 @@
     display: table-cell;
     vertical-align: middle;
     padding: 10px 5px;
-    max-width: 980px; 
+    max-width: 980px;
 }
 
 .box2 {
@@ -79,7 +79,28 @@
     color: gray;
 }
 
+.updates {
+    width: inherit;
+    display: block;
+    text-align: center;
+    font-size: 1.8vw;
+    color: #f1f1f1;
+    /*padding: 20px;*/
+    margin: auto;
+    line-height: 1.5em;
+}
 
+.update-item {
+    display: inline-block;
+    padding: 20px;
+    font-weight: 700;
+}
+
+.update-detail {
+    font-size: 1.6vw;
+    font-style: normal;
+    font-weight: 400;
+}
 
 .fight {
     opacity: 0;
@@ -152,6 +173,16 @@
     animation: fadeIn 1s ease-in-out 5s forwards;
 }
 
+.updates {
+    opacity: 0;
+    animation: fadeIn ease 5s forwards;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+    animation: fadeIn 1s ease-in-out 6s forwards;
+}
+
 .contact {
     opacity: 0;
     animation: fadeIn ease 6s forwards;
@@ -159,7 +190,7 @@
     -moz-animation: fadeIn ease 6s;
     -o-animation: fadeIn ease 6s;
     -ms-animation: fadeIn ease 6s;
-    animation: fadeIn 1s ease-in-out 6s forwards;
+    animation: fadeIn 1s ease-in-out 7s forwards;
 }
 
 
@@ -181,12 +212,23 @@
         font-size: 4vw;
     }
 
+    .updates {
+        font-size: 4vw;
+    }
+
+    .update-detail {
+        font-size: 3.5vw;
+    }
+
     .fight {
         font-size: 4vw;
     }
 }
 
 @media screen and (max-width: 800px) {
+    .updates {
+        max-width: 600px;
+    }
     .fight {
         max-width: 600px;
     }
@@ -203,6 +245,14 @@
 
     #gofundme {
         font-size: 20px;
+    }
+
+    .updates {
+        font-size: 20px;
+    }
+
+    .update-detail {
+        font-size: 18px;
     }
 
     .fight {
