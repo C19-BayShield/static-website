@@ -56,28 +56,34 @@
 }
 
 
-#donate {
-    background-color: transparent;
-    font-size: 2vw;
-    font-weight: bold;
-    color: white;
-    padding: 15px 32px;
-    border-radius: 3px;
+.cenn{
+    text-align: center;
+    width: 100%;
+    padding-left: calc(50% - 82px);;
 }
 
 #gofundme {
     color: white;
+display: block;
+background-color : transparent;
+font-size: 2vw;
+font-weight: bold;
+color: white;
+padding: 15px 32px;
+border-radius: 3px;
+width: 164px;
+height: 58px;
+border-width: 1px;
+border-style: solid;
+border-color: white;
 }
 
-#donate:hover {
+#gofundme:hover {
     background-color: white;
     opacity: .9;
     color: gray;
 }
 
-#donate:hover #gofundme{
-    color: gray;
-}
 
 .updates {
     width: inherit;
