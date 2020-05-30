@@ -46,10 +46,10 @@
             </div>
             <div class="updates">
                 <div class="update-item">PPE Produced
-                    <div class="update-detail">8043 Units</div>
+                    <div id="ppe" class="update-detail">Loading</div>
                 </div>
                 <div class="update-item">Next Delivery Date
-                    <div class="update-detail">05.20.2020</div>
+                    <div id="deliv" class="update-detail">Loading</div>
                 </div>
 
             </div>
@@ -74,6 +74,8 @@
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
     <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
     <script src="assets/js/material-kit.js?v=2.0.7" type="text/javascript"></script>
+    <script src="assets/js/autoupdate.js"></script>
+    <script src="https://spreadsheets.google.com/feeds/cells/1Xk-y1hutN86FjvkYBE1cauol4RwMFMXGVM7xB6cYvRU/1/public/values?alt=json-in-script&callback=doData"></script>
 </body>
 
 </html>
